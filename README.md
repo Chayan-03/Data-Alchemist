@@ -171,7 +171,4 @@ This project demonstrates:
 
 ---
 
-Built with ❤️ for data transformation and workflow optimization.
-=======
-# Data-Alchemist
->>>>>>> 58069c2fd9d249d9094fbc6cabcfd9450f79b16a
+
