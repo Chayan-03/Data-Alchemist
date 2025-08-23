@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧪 Data Alchemist
 
 A smart Next.js web application that transforms messy Excel/CSV data into clean, validated datasets with AI-powered rules and validation.
@@ -171,3 +172,6 @@ This project demonstrates:
 ---
 
 Built with ❤️ for data transformation and workflow optimization.
+=======
+# Data-Alchemist
+>>>>>>> 58069c2fd9d249d9094fbc6cabcfd9450f79b16a
