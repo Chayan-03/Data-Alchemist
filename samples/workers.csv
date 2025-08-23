@@ -1,0 +1,6 @@
+id,name,skills,availability,rate
+W001,John Smith,"JavaScript,React,Node.js",full-time,75
+W002,Sarah Johnson,"Python,Django,PostgreSQL",part-time,65
+W003,Mike Chen,"Java,Spring,AWS",full-time,80
+W004,Lisa Wong,"React,TypeScript,GraphQL",contract,70
+W005,David Brown,"PHP,Laravel,MySQL",full-time,60

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+  }
+  
+  .table-cell {
+    @apply px-4 py-2 border-b border-gray-200 text-sm;
+  }
+  
+  .error-cell {
+    @apply bg-red-50 border-red-200 text-red-800;
+  }
+  
+  .warning-cell {
+    @apply bg-yellow-50 border-yellow-200 text-yellow-800;
+  }
+  
+  .success-cell {
+    @apply bg-green-50 border-green-200 text-green-800;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background-color: #e5e7eb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-cell {
+  background: white;
+  padding: 8px 12px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.data-cell:hover {
+  background-color: #f9fafb;
+}
+
+.data-cell.editable {
+  cursor: text;
+}
+
+.data-cell.error {
+  background-color: #fef2f2;
+  border-left: 3px solid #ef4444;
+}
+
+.data-cell.warning {
+  background-color: #fffbeb;
+  border-left: 3px solid #f59e0b;
+}
+
+.validation-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1f2937;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.data-cell:hover .validation-tooltip {
+  opacity: 1;
+}
+
+.search-highlight {
+  background-color: #fef3c7;
+  padding: 1px 2px;
+  border-radius: 2px;
+}

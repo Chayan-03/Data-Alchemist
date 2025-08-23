@@ -1,0 +1,6 @@
+id,name,email,priority,budget
+C001,Acme Corp,contact@acme.com,5,50000
+C002,Tech Solutions,info@techsol.com,3,25000
+C003,Global Industries,hello@global.com,4,75000
+C004,StartupXYZ,team@startupxyz.com,2,15000
+C005,Enterprise Ltd,contact@enterprise.com,5,100000
